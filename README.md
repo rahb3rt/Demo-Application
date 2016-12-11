@@ -9,9 +9,9 @@ This is nothing more than to preview some skills I demonstrate in iOS developmen
 After about an hour of just learning about the whole code set and how it functions, 
 I set off programming and here are the break downs:
 
-1. UI Design: Took about 2 hours of work to put everything together in the right place. 
+UI Design: Took about 2 hours of work to put everything together in the right place. 
 
-2. Animating: 
+Animating: 
 - Was not difficult used a Quartz Library to perform the animation. 
 Initially was going to use a rotation, however the instructions 
 did specify animate.
@@ -21,7 +21,7 @@ This also includes some sounds with the animations and designing my own
 animation of the logo
 - Total hours 2-3 
 
-3. API Connection:
+API Connection:
 - Having previously designed a copy of Instagram, I had very solid
 knowledge of how an API through a JSON file functions so was easily able 
 to parse it out and extract neccessary information.
@@ -29,7 +29,7 @@ to parse it out and extract neccessary information.
 everything after that went smooth.
 - Total hours: 2
 
-4. Chat
+Chat
 - Easiest part of the whole build, just referenced once again my 
 Instagram copy for how JSON files are parsed for images
 - Looking up how to make a circular image was an easily 1-2 line code
