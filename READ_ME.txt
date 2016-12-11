@@ -1,4 +1,10 @@
-After about an hour of just learning about the whole code set and how it functions, I set off programming and here are the break downs:
+This is nothing more than to preview some skills I demonstrate in iOS development in Objective-C. Improvements to make to future releases of this demo include:
+
+- UIButton in animation to contain only one function not several for animation, where the animations get seperated into classes and then just called on command when the button is pressed.
+- Reorganizing some of the code to work better with iOS8 and iPhone 4s
+
+After about an hour of just learning about the whole code set and how it functions, 
+I set off programming and here are the break downs:
 
 1. UI Design: Took about 2 hours of work to put everything together in the right place. 
 
