@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Jelloween - Machinato.ttf">
+            <string>Machinato</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChatSectionViewController">
+            <connections>
+                <outlet property="tableView" destination="udg-gG-eTY" id="c0e-hS-RSA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LLr-mJ-WRA">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                    <color key="backgroundColor" red="0.17254901959999999" green="0.27058823529999998" blue="0.33725490200000002" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="Qod-2q-5rr"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0bY-Kz-ENX">
+                    <rect key="frame" x="8" y="24" width="64" height="41"/>
+                    <state key="normal" backgroundImage="Back_Button">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="backAction:" destination="-1" eventType="touchUpInside" id="1cb-Mh-taT"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="udg-gG-eTY">
+                    <rect key="frame" x="0.0" y="96" width="375" height="571"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Qfb-t0-gjY"/>
+                        <outlet property="delegate" destination="-1" id="Iog-10-8d2"/>
+                    </connections>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AHR-1u-Ql9">
+                    <rect key="frame" x="122" y="33" width="131" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="131" id="PJU-ao-eLZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Machinato" family="Machinato" pointSize="20"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="0bY-Kz-ENX" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="24" id="4tq-v8-XoF"/>
+                <constraint firstItem="udg-gG-eTY" firstAttribute="trailing" secondItem="LLr-mJ-WRA" secondAttribute="trailing" id="5BY-mI-MKs"/>
+                <constraint firstItem="AHR-1u-Ql9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="33" id="BH5-2b-DJF"/>
+                <constraint firstAttribute="bottom" secondItem="udg-gG-eTY" secondAttribute="bottom" id="ITw-Mw-dND"/>
+                <constraint firstItem="AHR-1u-Ql9" firstAttribute="leading" secondItem="0bY-Kz-ENX" secondAttribute="trailing" constant="50" id="JJV-mT-QkT"/>
+                <constraint firstItem="udg-gG-eTY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="MTW-0l-qHb"/>
+                <constraint firstItem="0bY-Kz-ENX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leadingMargin" constant="-8" id="Mkz-Eu-S01"/>
+                <constraint firstItem="udg-gG-eTY" firstAttribute="top" secondItem="LLr-mJ-WRA" secondAttribute="bottom" constant="26" id="Tlv-ek-9ss"/>
+                <constraint firstAttribute="trailing" secondItem="udg-gG-eTY" secondAttribute="trailing" id="Xp4-5j-YBI"/>
+                <constraint firstItem="AHR-1u-Ql9" firstAttribute="centerX" secondItem="LLr-mJ-WRA" secondAttribute="centerX" id="dKD-3t-rPC"/>
+                <constraint firstItem="0bY-Kz-ENX" firstAttribute="bottom" secondItem="AHR-1u-Ql9" secondAttribute="bottom" id="g1r-ju-tQ6"/>
+                <constraint firstItem="LLr-mJ-WRA" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="hGo-Zg-k1U"/>
+                <constraint firstItem="udg-gG-eTY" firstAttribute="leading" secondItem="LLr-mJ-WRA" secondAttribute="leading" id="mTh-hU-ovK"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Back_Button" width="41" height="41"/>
+    </resources>
+</document>
